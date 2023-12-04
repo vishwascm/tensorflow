@@ -717,7 +717,7 @@ class MklLayoutRewritePass : public GraphOptimizationPass {
          CopyAttrsAll, RewriteIfAtleastOneMklInput, GetRewriteCause()});
     rinfo_.push_back({csinfo_.softmax,
                       mkl_op_registry::GetMklOpName(csinfo_.softmax),
-                      CopyAttrsAll, RewriteIfX86, GetRewriteCause()});
+                      CopyAttrsAll, AlwaysRewrite, GetRewriteCause()});
 
     rinfo_.push_back({csinfo_.squared_difference,
                       mkl_op_registry::GetMklOpName(csinfo_.squared_difference),
