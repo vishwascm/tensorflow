@@ -212,9 +212,9 @@ def _tf_repositories():
             "//third_party/mkl_dnn:onednn_acl_fp32_bf16_reorder.patch",
             "//third_party/mkl_dnn:onednn_acl_bf16_capability_detection_for_ubuntu20.04.patch",
         ],
-        sha256 = "2f76b407ef8893cca71340f88cd800019a1f14f8ac1bbdbb89a84be1370b52e3",
+        sha256 = "6f45b8d5c28c1af490e4db999c808ca5062a63754a53a534fbd82fc7c153b0f6",
         strip_prefix = "oneDNN-3.2.1",
-        urls = tf_mirror_urls("https://github.com/oneapi-src/oneDNN/archive/refs/tags/v3.2.1.tar.gz"),
+        urls = tf_mirror_urls("https://github.com/vishwascm/oneDNN/archive/refs/tags/v3.2.1.tar.gz"),
     )
 
     tf_http_archive(
